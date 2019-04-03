@@ -1,7 +1,9 @@
 # Todolist
- This app allows to create new to-do lists. For instance, you can make 
+ This app allows to create new to-do lists. 
+ For instance, you can make 
  different sections like shopping, travelling, work etc.
- You are able to tick the items off and swipe to delete them, search any item from the to-do list.
+ You can tick the items off and swipe to delete them, search any item from the to-do list. AS the number of items gets increased, the colour of items in a section gets darker and darker.
+
 Functionality Used: 
 UITableViewController, TableView Delegate methods, creating a text field inside UIAlert,
 persistent local data storage, user defaults, configure core data with SQLite database backend,
