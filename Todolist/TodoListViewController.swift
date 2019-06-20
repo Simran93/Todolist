@@ -8,14 +8,18 @@
 
 import UIKit
 
+
+
 class TodoListViewController: UITableViewController {
-    let itemArray = ["Simranjeet", "Loverose", "Sahil" ]
+    let itemArray = ["Simranjeet", "Sourav", "Sahil" ]
   
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+      
+        
     }
+//    TableView Datasource Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
     }
@@ -25,6 +29,7 @@ class TodoListViewController: UITableViewController {
        
         return cell 
     }
+//MARK - TableView Delegate Methods 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
 //        print (itemArray[indexPath.row])
@@ -37,7 +42,19 @@ class TodoListViewController: UITableViewController {
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
-
-
+// Add a new BarButton
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "Add New Todolist Item", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            // what will happen once the user clicks the Add Item button on our UIAlert
+            print("Success!")
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
 }
 
