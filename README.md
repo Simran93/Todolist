@@ -1,4 +1,4 @@
-# Todolist : This app allows to create new to-do lists and we all the data is persisted locally on the device using Userdefaults and CoreData.
+# Todolist : This app allows to create new to-do lists and all the data is persisted locally on the device using Userdefaults and CoreData.
  For instance, you can make  different sections like shopping, travelling, work etc.
  You can tick the items off and swipe to delete them, search any item from the to-do list. AS the number of items gets increased, the colour of items in a section gets darker and darker.
 
